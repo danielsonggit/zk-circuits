@@ -3,4 +3,5 @@ resolver = "2"
 members = [
   "common-utils",
   "circuits/dual_agg",
+  "circuits/tx_validate",
 ]

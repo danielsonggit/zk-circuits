@@ -17,7 +17,10 @@ use std::marker::PhantomData;
 /// Returns the padded matrix and the new row count.
 pub fn pad_to_pow2<F: Field>(mut data: Vec<F>, width: usize) -> (RowMajorMatrix<F>, usize) {
     let height = data.len() / width;
-    let padded = height.next_power_of_two();
+    let mut padded = height.next_power_of_two();
+    if padded < 4 {
+        padded = 4;
+    }
     // Copy the last row into an owned Vec to avoid borrowing 'data' during mutation
     let last_row = data[(height - 1) * width..height * width].to_vec();
     // Extend with copies of the last row until padded length
