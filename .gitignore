@@ -1,0 +1,42 @@
+# Rust build artifacts
+/target/
+/**/target/
+
+# Cargo lock file (uncomment if this is a library, comment if it's an application)
+
+# Rustfmt backup files
+**/*.rs.bk
+
+# IDE/editor directories
+.vscode/
+.idea/
+*.iml
+*.sublime-project
+*.sublime-workspace
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Environment files
+.env
+.env.*
+
+# Log files
+*.log
+
+# Coverage reports
+.coverage/
+coverage/
+
+# Temporary files
+*.tmp
+*.temp
+
+# Generated documentation
+/doc/
+
+# Misc
+**/*~
+
+note.md

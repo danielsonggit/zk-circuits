@@ -1,0 +1,27 @@
+[package]
+name = "common-utils"
+version = "0.1.0"
+edition = "2021"
+publish = false
+
+[dependencies]
+# Field & matrix (for pad_to_pow2)
+p3_field    = { git = "https://github.com/Plonky3/Plonky3.git", tag = "v0.3.0", package = "p3-field" }
+p3_matrix   = { git = "https://github.com/Plonky3/Plonky3.git", tag = "v0.3.0", package = "p3-matrix" }
+
+# StarkConfig and AIR
+p3_air         = { git = "https://github.com/Plonky3/Plonky3.git", tag = "v0.3.0", package = "p3-air" }
+p3_uni_stark   = { git = "https://github.com/Plonky3/Plonky3.git", tag = "v0.3.0", package = "p3-uni-stark" }
+p3_circle      = { git = "https://github.com/Plonky3/Plonky3.git", tag = "v0.3.0", package = "p3-circle" }
+p3_commit      = { git = "https://github.com/Plonky3/Plonky3.git", tag = "v0.3.0", package = "p3-commit" }
+p3_fri         = { git = "https://github.com/Plonky3/Plonky3.git", tag = "v0.3.0", package = "p3-fri" }
+
+# Hash & Merkle
+p3_keccak         = { git = "https://github.com/Plonky3/Plonky3.git", tag = "v0.3.0", package = "p3-keccak" }
+p3_symmetric      = { git = "https://github.com/Plonky3/Plonky3.git", tag = "v0.3.0", package = "p3-symmetric" }
+p3_merkle_tree    = { git = "https://github.com/Plonky3/Plonky3.git", tag = "v0.3.0", package = "p3-merkle-tree" }
+p3_challenger     = { git = "https://github.com/Plonky3/Plonky3.git", tag = "v0.3.0", package = "p3-challenger" }
+
+# Field extension & scalar field
+p3_mersenne_31    = { git = "https://github.com/Plonky3/Plonky3.git", tag = "v0.3.0", package = "p3-mersenne-31" }
+
