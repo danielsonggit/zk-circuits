@@ -4,4 +4,5 @@ members = [
   "common-utils",
   "circuits/dual_agg",
   "circuits/tx_validate",
+  "circuits/range_check",
 ]
