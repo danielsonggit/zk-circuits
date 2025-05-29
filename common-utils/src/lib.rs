@@ -21,12 +21,11 @@ pub fn pad_to_pow2<F: Field>(mut data: Vec<F>, width: usize) -> (RowMajorMatrix<
     if padded < 4 {
         padded = 4;
     }
-    // Copy the last row into an owned Vec to avoid borrowing 'data' during mutation
-    let last_row = data[(height - 1) * width..height * width].to_vec();
-    // Extend with copies of the last row until padded length
-    for _ in height..padded {
-        data.extend_from_slice(&last_row);
-    }
+    // Extend with zeros until padded length
+    let padding_rows = padded - height;
+    let padding_elements = padding_rows * width;
+    data.resize(data.len() + padding_elements, F::ZERO);
+
     (RowMajorMatrix::new(data, width), padded)
 }
 

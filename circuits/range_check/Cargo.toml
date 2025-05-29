@@ -5,13 +5,13 @@ edition = "2021"
 
 [dependencies]
 # Plonky3 Stark 相关
-p3-air = { git = "https://github.com/Plonky3/Plonky3.git", tag = "v0.3.0"}
+p3-air = { git = "https://github.com/Plonky3/Plonky3.git", tag = "v0.3.0" }
 p3-field = { git = "https://github.com/Plonky3/Plonky3.git", tag = "v0.3.0" }
 p3-matrix = { git = "https://github.com/Plonky3/Plonky3.git", tag = "v0.3.0" }
-p3-fri = { git = "https://github.com/Plonky3/Plonky3.git", tag = "v0.3.0"}
-p3-mersenne-31 = {  git = "https://github.com/Plonky3/Plonky3.git", tag = "v0.3.0" }
-p3-util =  { git = "https://github.com/Plonky3/Plonky3.git", tag = "v0.3.0" }
-p3-baby-bear =  { git = "https://github.com/Plonky3/Plonky3.git", tag = "v0.3.0" }
+p3-fri = { git = "https://github.com/Plonky3/Plonky3.git", tag = "v0.3.0" }
+p3-mersenne-31 = { git = "https://github.com/Plonky3/Plonky3.git", tag = "v0.3.0" }
+p3-util = { git = "https://github.com/Plonky3/Plonky3.git", tag = "v0.3.0" }
+p3-baby-bear = { git = "https://github.com/Plonky3/Plonky3.git", tag = "v0.3.0" }
 p3-challenger = { git = "https://github.com/Plonky3/Plonky3.git", tag = "v0.3.0" }
 p3-circle = { git = "https://github.com/Plonky3/Plonky3.git", tag = "v0.3.0" }
 p3-commit = { git = "https://github.com/Plonky3/Plonky3.git", tag = "v0.3.0" }
@@ -30,6 +30,7 @@ p3-uni-stark = { git = "https://github.com/Plonky3/Plonky3.git", tag = "v0.3.0" 
 common-utils = { path = "../../common-utils" }
 
 # 其他
+anyhow = "1.0"
 rand = "0.8.5"
 tracing-subscriber = { version = "0.3.17", features = ["std", "env-filter"] }
 tracing-forest = { version = "0.1.6", features = ["ansi", "smallvec"] }
